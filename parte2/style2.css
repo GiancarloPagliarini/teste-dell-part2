@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+ul li {
+    list-style: none;
+}
+
+h1 {
+    text-align: center;
+}
+
+.form-citys {
+    display: flex;
+    gap: 15px;
+}
+
+.form-citys input:enabled {
+    border-bottom: 1px solid #000 !important;
+}
+
+.form-citys input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+#quantity-items {
+    max-width: 15%;
+}
+
+.btn-add-items {
+    padding: 6px;
+    font-size: 14px;
+}
+
+.cardTruck {
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 2px !important;
+}
+
+.truckImage {
+    width: 80px;
+}
+
+.imagePackage {
+    float: left;
+    margin-right: 10px;
+    width: 20px;
+}
+
+#res-negative {
+    color: red !important;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .form-citys {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+}
